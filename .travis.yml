@@ -1,0 +1,11 @@
+arch: 
+  - amd64
+  - ppc64le
+language: c
+dist: xenial
+os: linux
+script:
+  - make distclean
+  - make V=1
+  - make test
+  - sudo make install
